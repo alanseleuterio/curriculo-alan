@@ -47,6 +47,7 @@ profile_pic = Image.open("./assets/perfil.png")
 image0 = Image.open("./assets/lateral2.png")
 update = Image.open("./assets/update.png")
 pdf_file = current_dir / "assets" / "Currículo_Alan.pdf"
+logo = Image.open("./assets/logo_sidebar.png")
 
 
 titulo_pagina = 'Currículo Digital | Alan dos Santos Eleuterio'
@@ -194,6 +195,7 @@ with st.container ():
     data-buttonclass="btn btn-primary" 
     data-offset="0"></div></div> <script src="https://www.twilik.com/assets/retainable/rss-embed/retainable-rss-embed.js"></script>"""}
     with st.sidebar:
+            st.image(logo)
             components.html(embed_component['linkedin'],height=335)
             st.image(image0)
             st.write('---')
