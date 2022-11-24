@@ -72,9 +72,8 @@ with open(css_file) as f:
     with open(resume_file, "rb") as pdf_file:
         PDFbyte = pdf_file.read()
 
-
-col1, col2 = st.columns(2)
 st.write('#')
+col1, col2 = st.columns(2)
 with col1:
      st.image(profile_pic, width=390)
       
