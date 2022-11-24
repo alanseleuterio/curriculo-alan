@@ -20,6 +20,15 @@ from folium.plugins import HeatMap
 
 st.set_page_config(layout='wide', page_title="Currículo Digital Alan", page_icon=":globe_with_meridians:")
 
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 over_theme = {
     'txc_inactive': '#D1E1E1',
     'menu_background':'#024949',
