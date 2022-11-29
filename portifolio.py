@@ -40,6 +40,8 @@ font_fmt = {
 'font-size':'150%'
 }
 
+st.info('Carregando...', icon="ℹ️")
+
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir  / "style" / 'style.css'
 resume_file = current_dir / "assets" / "Currículo_Alan.pdf"
