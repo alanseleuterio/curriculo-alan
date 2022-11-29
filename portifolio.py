@@ -267,7 +267,7 @@ with st.container ():
         m = folium.Map(location=[-21.1663553,-50.0863553], tiles="Cartodb Positron", zoom_start=6,control_scale=True, height=500, margin=0)
 
         marker_cluster = MarkerCluster().add_to(m)
-        iframe = branca.element.IFrame(html=html1, width=340, height=420)
+        iframe = branca.element.IFrame(html=html1, width=320, height=400)
         popup = folium.Popup(iframe, max_width=440)
         folium.Marker(
             location=[-22.3416565,-46.9702272],
