@@ -17,6 +17,7 @@ import pandas as pd
 from branca.element import Figure
 from folium.plugins import MarkerCluster
 from folium.plugins import HeatMap
+import time
 
 st.set_page_config(layout='wide', page_title="Currículo Digital Alan", page_icon=":globe_with_meridians:")
 
@@ -40,7 +41,9 @@ font_fmt = {
 'font-size':'150%'
 }
 
-st.info('Carregando...', icon="ℹ️")
+with st.spinner('Carregando...'):
+    time.sleep(5)
+st.success('Done!')
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir  / "style" / 'style.css'
